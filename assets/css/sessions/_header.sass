@@ -1,0 +1,63 @@
+// main: ../base/main.sass
+
+@import "../base/mixins"
+@import "../base/placeholders"
+@import "../base/vars"
+
+
+header
+  height: 450px
+  background: url(../img/header.jpg) center center
+  background-size: cover
+
+  .logo
+    +size(50px)
+    float: left
+    margin: 10px 0 0 30px
+
+  nav
+    float: right
+    margin: 30px 30px 0 0
+
+    ul
+      margin-left: 20px
+      padding: 0
+      margin: 0
+
+      li
+        display: inline-block
+        margin-left: 20px
+
+
+    a
+      text-decoration: none
+      color: rgba(0,0,0,0.7)
+      @extend .small-bold
+
+      &:hover
+        color: rgba(0,0,0,1)
+
+  h1
+    text-align: center
+    font:
+      size: 72px
+      weight: 700
+    color: $documentBackgroundColor
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 20px
+    clear: both
+    padding-top: 100px
+
+    span
+      border: 10px solid $documentBackgroundColor
+      padding: 0.2em 0.5em
+      display: inline-block
+
+  .kicker
+    text-align: center
+    @extend .small-bold
+    text-transform: uppercase
+    color: $documentBackgroundColor
+    letter-spacing: 0.05em
+    line-height: 1
